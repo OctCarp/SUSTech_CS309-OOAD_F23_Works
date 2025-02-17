@@ -9,13 +9,14 @@ It can be used as a reference, but the code cannot be guaranteed to work.
 
 ### Content
 
-| ID                               | Grade   |
-| -------------------------------- | ------- |
-| [A1_Frontend](A1_Frontend)       | 100/100 |
-| [A2_UML](A2_UML)                 | 98/100  |
-| [A3_Observer](A3_Observer)       | Pass    |
-| [A4_Factory](A4_Factory)         | Pass    |
-| [A5_Command](A5_Command)         | Pass    |
-| [A6_Adapter](A6_Adapter)         | Pass    |
-| [A7_Refactoring](A7_Refactoring) | Pass    |
+| ID                                                 | Grade       |
+| -------------------------------------------------- | ----------- |
+| [A1_Frontend](A1_Frontend)                         | 100/100     |
+| [A2_UML](A2_UML)                                   | 98/100      |
+| [A3_Observer](A3_Observer)                         | Pass        |
+| [A4_Factory](A4_Factory)                           | Pass        |
+| [A5_Command](A5_Command)                           | Pass        |
+| [A6_Adapter](A6_Adapter)                           | Pass        |
+| [A7_Refactoring](A7_Refactoring)                   | Pass        |
+| [A8_Dependency-Injection](A8_Dependency-Injection) | Not checked |
 
