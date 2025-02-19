@@ -1,0 +1,13 @@
+CREATE user cs309 WITH PASSWORD 'cs309'
+    CREATEDB
+    LOGIN;
+
+CREATE DATABASE cs309_a1_backend
+    WITH
+    OWNER = cs309
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_US.utf8'
+    LC_CTYPE = 'en_US.utf8'
+    TEMPLATE template0;
+
+GRANT ALL PRIVILEGES ON DATABASE cs309_a1_backend TO cs309;

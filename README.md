@@ -12,6 +12,7 @@ It can be used as a reference, but the code cannot be guaranteed to work.
 | ID                                                 | Grade       |
 | -------------------------------------------------- | ----------- |
 | [A1_Frontend](A1_Frontend)                         | 100/100     |
+| [A1_Backend](A1_Backend)                           | Not checked |
 | [A2_UML](A2_UML)                                   | 98/100      |
 | [A3_Observer](A3_Observer)                         | Pass        |
 | [A4_Factory](A4_Factory)                           | Pass        |

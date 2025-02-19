@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Conference Rooms</title>
+</head>
+<body>
+<h1>Conference Rooms</h1>
+<a href="/rooms/add">Add New Room</a>
+<table>
+    <thead>
+    <tr>
+        <th>Room Name</th>
+        <th>Department</th>
+        <th>Room Type</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Max Duration</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="room : ${rooms}">
+        <td th:text="${room.roomName}"></td>
+        <td th:text="${room.department}"></td>
+        <td th:text="${room.roomType}"></td>
+        <td th:text="${room.location}"></td>
+        <td th:text="${room.date}"></td>
+        <td th:text="${room.startTime}"></td>
+        <td th:text="${room.endTime}"></td>
+        <td th:text="${room.maxDuration}"></td>
+        <td>
+            <a th:href="@{/rooms/edit/{id}(id=${room.id})}">Edit</a>
+            <a th:href="@{/rooms/delete/{id}(id=${room.id})}" onclick="return confirm('Are you sure?')">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<form action="/rooms/search" method="get">
+    <label for="roomName">Room Name:</label>
+    <input type="text" id="roomName" name="roomName" /><br/>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" /><br/>
+    <button type="submit">Search</button>
+</form>
+</body>
+</html>

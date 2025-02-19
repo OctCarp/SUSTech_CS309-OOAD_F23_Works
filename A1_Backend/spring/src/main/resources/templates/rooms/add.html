@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Room</title>
+</head>
+<body>
+<h1>Add New Room</h1>
+<form th:action="@{/rooms/add}" th:object="${room}" method="post">
+    <label for="roomName">Room Name:</label>
+    <input type="text" id="roomName" th:field="*{roomName}" required/><br/>
+
+    <label for="department">Department:</label>
+    <input type="text" id="department" th:field="*{department}"/><br/>
+
+    <label for="roomType">Room Type:</label>
+    <input type="text" id="roomType" th:field="*{roomType}"/><br/>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" th:field="*{location}"/><br/>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" th:field="*{date}"/><br/>
+
+    <label for="startTime">Start Time:</label>
+    <input type="time" id="startTime" th:field="*{startTime}"/><br/>
+
+    <label for="endTime">End Time:</label>
+    <input type="time" id="endTime" th:field="*{endTime}"/><br/>
+
+    <label for="maxDuration">Max Duration:</label>
+    <input type="text" id="maxDuration" th:field="*{maxDuration}"/><br/>
+
+    <button type="submit">Add Room</button>
+</form>
+<a href="/rooms">Back to List</a>
+</body>
+</html>
